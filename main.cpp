@@ -1,40 +1,29 @@
 #include <iostream>
+
 using namespace std;
 
-class employee{
-	int Id;
-	static int count;
-	
-	public:
-		void setData(void){
-			cout<<"enter the id of employee: "<<endl;
-			cin>>Id;
-			count++;
-			
-		}
-		void getData(void){
-			cout<<"the id of the employee is "<<Id<<" and this is employee number "<<count<<endl;
-		}
-		
-	static getCount(void){
-		cout<<"the value of count is "<<count<<endl;
-	}
-};
-int employee:: count;
 int main() {
+	int salary;
+	int serviceYears;
+	bool loan;
+	cout<<"enter the salary of employee: "<<endl;
+	cin>>salary;
+	cout<<"enter the service years of employee: "<<endl;
+	cin>>serviceYears;
+	cout<<"have you availed loan? ";
+	cin>>loan;
+	if(loan==0){
+	 if(salary<100000)
+		if(serviceYears>5){
+		
+		cout<<"you are eligible for loan";
+		
+		cout<<"you are elegible ";
+}
+	}
+	else
+	cout<<"not elegible for loan ";
 	
-	employee zafran,abdulaziz, salman;
-	zafran.setData();
-	zafran.getData();
-	employee::getCount();
-	
-	abdulaziz.setData();
-	abdulaziz.getData();
-	employee::getCount();
-	
-	salman.setData();
-	salman.getData();
-	employee::getCount();
-	
+
 	return 0;
 }
