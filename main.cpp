@@ -2,28 +2,30 @@
 
 using namespace std;
 
-int main() {
-	int salary;
-	int serviceYears;
-	bool loan;
-	cout<<"enter the salary of employee: "<<endl;
-	cin>>salary;
-	cout<<"enter the service years of employee: "<<endl;
-	cin>>serviceYears;
-	cout<<"have you availed loan? ";
-	cin>>loan;
-	if(loan==0){
-	 if(salary<100000)
-		if(serviceYears>5){
-		
-		cout<<"you are eligible for loan";
-		
-		cout<<"you are elegible ";
-}
-	}
-	else
-	cout<<"not elegible for loan ";
-	
+	int main()
+ {
+ int num = 4; // num starts out with 4.
 
-	return 0;
+ // Display the value in num.
+ cout << "The variable num is " << num << endl;
+ cout << "I will now increment num.\n\n";
+
+ // Use postfix ++ to increment num.
+ num++;
+cout << "Now the variable num is " << num << endl;
+cout << "I will increment num again.\n\n";
+  ++num;
+ // Use prefix ++ to increment num. ++num;
+ cout << "Now the variable num is " << num << endl;
+cout << "I will now decrement num.\n\n";
+
+// Use postfix -- to decrement num.
+num--;
+cout << "Now the variable num is " << num << endl;
+cout << "I will decrement num again.\n\n";
+
+ // Use prefix -- to increment num.
+--num;
+ cout << "Now the variable num is " << num << endl;
+ return 0;
 }
